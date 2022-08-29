@@ -77,7 +77,7 @@ public class UsersController {
 	@RequestMapping("Update-User")
 	public String updateUser(@RequestParam("userId") int userId,Model model) {
 		
-		System.out.println("Users id : "+userId);
+		
 		
 		UsersModel user = userServiceLayer.getUserById(userId);
 		
